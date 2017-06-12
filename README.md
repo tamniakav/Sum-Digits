@@ -14,11 +14,11 @@ namespace Sum_Digits
 
             int num = 0;
 
-            while (n > 0)
+            do
             {
                 num = num + (n % 10);
                 n = n / 10;
-            }
+            } while (n > 0);
            
             Console.WriteLine(num);
         }
